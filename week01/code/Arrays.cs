@@ -17,14 +17,6 @@ public static class Arrays
         return results;
     }
 
-
-    /// <summary>
-    /// Rotate the 'data' to the right by the 'amount'.  For example, if the data is 
-    /// List<int>{1, 2, 3, 4, 5, 6, 7, 8, 9} and an amount is 3 then the list after the function runs should be 
-    /// List<int>{7, 8, 9, 1, 2, 3, 4, 5, 6}.  The value of amount will be in the range of 1 to data.Count, inclusive.
-    ///
-    /// Because a list is dynamic, this function will modify the existing data list rather than returning a new list.
-    /// </summary>
     public static void RotateListRight(List<int> data, int amount)
     {
         // I didn't assign data.Count to a variable to increase visual clarity since it's a small snippet
