@@ -41,7 +41,7 @@ public static class Algorithms {
             count += 1;
 
         return count;
-    }
+    } //O(n)
 
     /// <summary>
     /// The count variable is keeping track of the amount
@@ -56,7 +56,7 @@ public static class Algorithms {
             count += 1;
 
         return count;
-    }
+    } //O(n2)
 
     /// <summary>
     /// The count variable is keeping track of the amount
@@ -72,7 +72,7 @@ public static class Algorithms {
             var middle = (end - start) / 2 + start;
             start = middle + 1;
             count += 1;
-        }
+        }//O(log n)
 
         return count;
     }
