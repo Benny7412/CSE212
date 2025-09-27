@@ -27,7 +27,24 @@
     /// in the list.
     /// </summary>
     /// <param name="numbers">array of integers</param>
-    private static void DisplaySumPairs(int[] numbers) {
+    private static void DisplaySumPairs(int[] numbers)
+    {
         // TODO Problem 2 - This should print pairs of numbers in the given array
+        int target = 10;
+        var viewedNumbers = new HashSet<int>(numbers);
+        for (int i = 0; i < numbers.Length; i++)
+        {
+
+            var currentNumber = numbers[i];
+            var missingNumber = target - currentNumber;
+
+            if (viewedNumbers.Contains(missingNumber))
+            {
+                Console.WriteLine(currentNumber + " + " + missingNumber + " = " + (currentNumber + missingNumber) );
+            }
+            viewedNumbers.Add(missingNumber);
+
+        }
+        
     }
 }

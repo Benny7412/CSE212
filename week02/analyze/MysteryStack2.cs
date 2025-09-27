@@ -35,7 +35,7 @@
                 stack.Push(float.Parse(item));
             }
             else if (item == "") {
-            }
+            } 
             else {
                 throw new ApplicationException("Invalid Case 3!");
             }
